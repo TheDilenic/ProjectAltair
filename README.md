@@ -1,4 +1,4 @@
-## Project Altair | A Biofouling Removal Robot 
+## Project Altair | An Autonomous Serving Robot 
 
 Purpose: Servant/helper, autonomous navigation, balance of precision and adaptability
 
