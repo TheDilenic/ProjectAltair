@@ -1,4 +1,4 @@
-## Project Hydrus | A Biofouling Removal Robot 
+## Project Altair | A Biofouling Removal Robot 
 
 Purpose: Servant/helper, autonomous navigation, balance of precision and adaptability
 
