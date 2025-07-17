@@ -4,19 +4,19 @@
     <!-- URDF : Unified Robot Description Format -->
 
     <material name="white">
-        <colour rbga="1 1 1 1" />
+        <color rgba="1 1 1 1" />
     </material>
 
     <material name="orange">
-        <colour rbga="1 0.3 0.1 1" />
+        <color rgba="1 0.3 0.1 1" />
     </material>
     
     <material name="blue">
-        <colour rbga="0.2 0.2 1 1" />
+        <color rgba="0.2 0.2 1 1" />
     </material>
 
     <material name="black">
-        <colour rbga="0 0 0 1" />
+        <color rgba="0 0 0 1" />
     </material>
 
     <!-- Easier to set at center of both drive wheels for differential drive robots -->
@@ -28,12 +28,12 @@
     <joint name="chassis_joint" type="fixed">
         <parent link="base_link"/>
         <child link="chassis"/>
-        <origin xyz="0.1 0 0"/>
+        <origin xyz="-0.1 0 0"/>
     </joint>
 
     <link name="chassis">
         <visual>
-            <origin xyz="0.15 0 0 0.075"/>
+            <origin xyz="0.15 0 0.075"/>
             <geometry>
                 <box size="0.3 0.3 0.15"/>
             </geometry>
