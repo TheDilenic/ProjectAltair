@@ -2,7 +2,12 @@
 
 Purpose: Servant/helper, autonomous navigation, balance of precision and adaptability
 
-Current Goals:
+Main Goals:
+- Autonomous Navigation with LIDAR and Camera
+- Follows user around
+- Able to carry multiple items inside its storage compartments
+
+To-Do:
 - Test LIDAR
 - Simulate Robot Online
 
