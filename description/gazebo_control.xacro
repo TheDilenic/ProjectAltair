@@ -5,25 +5,28 @@
     <!-- ros2 run teleop_twist_keyboard teleop_twist_keyboard -->
 
     <gazebo>
-        <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
+        <plugin name="gz::sim::systems::DiffDrive" filename="gz-sim-diff-driv-system">
+
             <!-- Wheel Information -->
             <left_joint>left_wheel_joint</left_joint>
             <right_joint>right_wheel_joint</right_joint>
             <wheel_separation>0.35</wheel_separation>
-            <wheel_diameter>0.1</wheel_diameter>
+            <wheel_radius>0.05</wheel_radius>
 
             <!-- Limits -->
-            <max_wheel_torque>200</max_wheel_torque>
-            <max_wheel_acceleration>10.0</max_wheel_acceleration>
+            <!-- <max_wheel_torque>200</max_wheel_torque> -->
+            <max_linear_acceleration>10.0</max_linear_acceleration>
 
+            <!-- Input -->
+             <topic>cmd_vel</topic>
 
             <!-- Output -->
-            <odometry_frame>odom</odometry_frame>
-            <base_link>base_link</base_link>
+            <frame_id>odom</frame_id>
+            <child_frame_id>base_link</child_frame_id>
+            <odm_topic>odom</odm_topic>
+            <odom_publisher_frequency>30</odom_publisher_frequency>
 
-            <publish_odom>true</publish_odom>
-            <publish_odom_tf>true</publish_odom_tf>
-            <publish_wheel_tf>true</publish_wheel_tf>
+            <tf_topic>/tf</tf_topic>
 
         </plugin>
     </gazebo>
