@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-    <!--  -->
+    <!-- To test teleop controls use command below -->
+    <!-- ros2 run teleop_twist_keyboard teleop_twist_keyboard -->
 
     <gazebo>
         <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
