@@ -35,6 +35,7 @@ endif()
 install(
   DIRECTORY config description launch worlds
   DESTINATION share/${PROJECT_NAME}
+  #data_files=[(os.path.join('share',package_name,'resource'),glob('config/*.yaml'))]
 )
 
 ament_package()
