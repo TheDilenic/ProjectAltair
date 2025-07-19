@@ -146,4 +146,10 @@
 
     </link>
 
+    <gazebo reference="caster_wheel">
+        <!-- This is remove friction from the caster wheel -->
+        <mu1 value='0.001'/>
+        <mu2 value='0.001'/>
+    </gazebo>
+
 </robot>
