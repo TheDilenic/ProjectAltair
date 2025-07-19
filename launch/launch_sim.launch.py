@@ -25,17 +25,29 @@ def generate_launch_description():
                 )]), launch_arguments={'use_sim_time': 'true'}.items()
     )
 
+    # # Making Gazebo worlds stuff
+    # default_world = os.path.join(
+    #     get_package_share_directory(package_name),
+    #     'worlds',
+    #     'empty.world'
+    # )
+
+    # world = LaunchConfiguration('world')
+                    # launch_arguments={'gz_args': ['-r -v4',world], 'on_exit_shutdown' : 'true'}.items()
+
     # Include the Gazebo launch file, provided by the ros_gz_sim package
     gazebo = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     get_package_share_directory('ros_gz_sim'), 'launch', 'gz_sim.launch.py')]),
+                    launch_arguments={'gz_args': ['-v 4 default.sdf',], 'on_exit_shutdown' : 'true'}.items()
+
              )
 
     # Run the spawner node from the ros_gz_sim package. The entity name doesn't really matter if you only have a single robot.
     spawn_entity = Node(package='ros_gz_sim', executable='create',
                         arguments=['-topic', 'robot_description',
-                                   '-name', 'my_bot',
-                                   '-z', '0.05'],
+                                   '-name', 'altair',
+                                   '-z', '0.1'],
                         output='screen')
 
     bridge_params = os.path.join(get_package_share_directory(package_name),'config','gz_bridge.yaml')
