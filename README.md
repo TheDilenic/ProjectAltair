@@ -14,8 +14,9 @@ Software:
 - Set-up Raspberry PI 5 with ROS and necessary software
     - Software List:
         - ROS
-        - others
-        - etc
+        - VScode
+        - Gazebo
+        - 
 - WebSockets w/ simple WiFi-enabled control
 
 
@@ -27,13 +28,13 @@ Electrical:
 Mechanical:
 - Create a base frame
    - Maybe out of a plastic box? If I can't use school aluminium ✅
-     - Using a random plastic box
+     - Using a random plastic box✅
 - Make a electronics layer to slot into the frame,
     - Can drill holes and other stuff for electronic connections
     - Makes it easier to switch out
     - Easy & neater wiring
 - CAD a motor holder (L-Brackets) for my torquenado motors ✅
-    - Fix onto frame using zipties (for now)
-- Print motor split L-brackets
-- Design/find wheels that can fit nicely on my motors
-- Get 4 auxiliary wheels
+    - Fix onto frame using zipties (for now)✅
+- Print motor split L-brackets✅
+- Design/find wheels that can fit nicely on my motors✅
+- Get 4 auxiliary wheels ✅
