@@ -1,25 +1,25 @@
 # Project Altair | An Autonomous Serving Robot 
 
 Purpose: Servant/helper, autonomous navigation, balance of precision and adaptability
-### Current Availiable Features & Functionality
+### :ballot_box_with_check: Current Availiable Features & Functionality
 - Plastic Base Frame
 - Basic and Caster wheels ready for attachment
 
   
 &nbsp;
-### Main Goals:
-- Autonomous Navigation with LIDAR and Camera
-- Follows user around
+### :star: Main Goals:
+- Autonomous Navigation with LIDAR and Camera :camera:
+- Follows user around :walking:
 - Able to carry multiple items inside its storage compartments
 
 &nbsp;
 ### To-Do:
-Admin:
+:page_with_curl:Admin:
 - Read own wiki to catch myself up
 - Recap on progress & YT playlist
 
 
-Software:
+:computer:Software:
 - Set-up Raspberry PI 5 with ROS and necessary software
     - Software List:
         - ROS
@@ -28,12 +28,12 @@ Software:
         - 
 - WebSockets w/ simple WiFi-enabled control
 
-Electrical:
+:zap:Electrical:
 - Test LIDAR
 - Regather electric components again
 - Get encoder readings to work
 
-Mechanical:
+:wrench:Mechanical:
 - Make a electronics layer to slot into the frame,
     - Can drill holes and other stuff for electronic connections
     - Makes it easier to switch out
